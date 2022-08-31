@@ -1,0 +1,28 @@
+  <!-- <p><a href="{{ url_for('main_bp.display_category', category_id=med.category_id) }}"><span class="mr-2">categoy id: {{ med.category_id }}</span></a></p> -->
+
+                            <!-- <a class="dropdown-item" href="{{ url_for('main_bp.add_harvested_canabis', product_id=canabis.id)}}">Add</a>
+                          <a class="dropdown-item" href="{{ url_for('main_bp.delete_harvested_canabis', product_id=canabis.id)}}">delete</a>
+                          <a class="dropdown-item" href="{{ url_for('main_bp.edit_harvested_canabis', product_id=canabis.id)}}">Edit</a> -->
+
+
+                          <div class="card-body">
+                <div class="container">
+                    <h4 style="margin-left: 45px"> update this harvested canabis </h4>
+                    <hr>
+                      {{ form.hidden_tag() }}
+                      {{ wtf.quick_form(form) }}
+                </div>
+            </div>
+
+
+
+            <td>
+                <div class="d-flex align-items-center">
+                  <p><a href="{{ url_for('main_bp.display_category_packaged', category_id=canabis.category_id) }}"><span class="mr-2">categoy id: {{ canabis.category_id }}</span></a></p>
+                </div>
+              </td>
+
+
+              <a class="dropdown-item" href="{{ url_for('main_bp.add_packaged_canabis', product_id=canabis.id)}}">Add</a>
+              <a class="dropdown-item" href="{{ url_for('main_bp.delete_packaged_canabis', product_id=canabis.id)}}">delete</a>
+              <a class="dropdown-item" href="{{ url_for('main_bp.edit_packaged_canabis', product_id=canabis.id)}}">Edit</a>
